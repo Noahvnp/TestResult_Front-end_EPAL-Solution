@@ -11,6 +11,10 @@
     }
   }
 
+  .header {
+    z-index: 99999;
+  }
+
   .slick-dots {
     bottom: 1rem !important;
     z-index: 9999 !important;

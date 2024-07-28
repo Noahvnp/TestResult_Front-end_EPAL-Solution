@@ -8,7 +8,7 @@ import { IoMdSearch } from "react-icons/io";
 import { IoBagHandleSharp } from "react-icons/io5";
 const Header = () => {
   return (
-    <div className="w-full">
+    <div className="header sticky top-0 w-full">
       <div className="bg-inkLighter">
         <TopHeader />
         <div className="border-b">
