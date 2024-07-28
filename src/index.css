@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: "Mulish", sans-serif;
+      background-color: #FFFFFF;
+    }
+  }
+
+  .slick-dots {
+    bottom: 1rem !important;
+    z-index: 9999 !important;
+
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    box-sizing: border-box !important;
+    z-index: 9999 !important;
+    color: #59C8E0 !important;
+    border: 1px solid #59C8E0 !important;
+    border-radius: 9999px !important;
+}
+
+.slick-dots li button:before {
+  width: 16px !important;
+  height: 16px !important;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.slick-slide {
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+  padding: 40px 0;
+} */
+
+
+.slick-slide .reason-container {
+  /* transform: scale(0.9); */
+  max-width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+ .slick-slide .slick-active .reason-container .slick-current {
+  margin-top: 0px;
+}
+
+button.slick-prev::before,
+button.slick-next::before {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #172B4D;
+}
+
+button.slick-prev::before {
+  content: "\276E";
+}
+
+button.slick-next::before {
+  content: "\276F";
+}
